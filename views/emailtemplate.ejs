@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Template</title>
+    <style>
+        .verify-button {
+            padding: 5px 10px;
+            background: lightcoral;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome <%= name %>!</h1>
+    <p>Thank you for joining our platform. Please verify your email using the link below:</p>
+    <a href="http://localhost:4000/verify?email=<%= name %>" class="verify-button">Verify Email</a>
+    <p>Best Regards,<br/>Your Company</p>
+</body>
+</html>
